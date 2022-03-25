@@ -78,14 +78,16 @@ export default function App() {
             marginRight=".5em"
             bgColor="white"
             shadow={1}
-            padding=".8em">
+            padding=".8em"
+            mt="1em">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.8em" height="1.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 7.34L16.66 4.6A2 2 0 0 0 14 4.53l-9 9a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71ZM16 10.68L13.32 8l1.95-2L18 8.73Z"/></svg>
           </Pressable>
           <Pressable
             marginRight=".5em"
             bgColor="white"
             shadow={1}
-            padding=".8em">
+            padding=".8em"
+            mt="1em">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.8em" height="1.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M3 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h7.5a.5.5 0 0 0 0-1H3V2h7.5a.5.5 0 0 0 0-1H3Zm9.604 3.896a.5.5 0 0 0-.708.708L13.293 7H6.5a.5.5 0 0 0 0 1h6.793l-1.397 1.396a.5.5 0 0 0 .708.708l2.25-2.25a.5.5 0 0 0 0-.708l-2.25-2.25Z" clip-rule="evenodd"/></svg>
           </Pressable>
         </HStack>
@@ -93,16 +95,19 @@ export default function App() {
           <HStack 
             flex={1}
             justifyContent="flex-start"
-            shadow={1}
+            shadow={2}
             borderRadius="1em"
-            padding="1em">
+            padding="1em"
+            mt="1em">
 
             <Box    
               width = "100px"
               height = "100px"
               borderStyle="solid"
               borderColor="#000"
-              borderWidth="1px">              
+              borderWidth="1px"
+              mr="1em"
+              alignSelf="center">              
             </Box>
             <Box
               justifyContent="flex-start">
@@ -112,6 +117,28 @@ export default function App() {
                   
                 }}>
                   GOOD MORNING
+                </Box>
+                <Box
+                _text={{
+                  fontSize: "2em",
+                  fontWeight: "bold"
+                }}>
+                  JOHN D.
+                </Box>
+                <Box
+                _text={{
+                  fontSize: "1em",
+                  fontWeight: "light"
+                }}>
+                  MAR. 25, 2022
+                </Box>
+                <Box
+                _text={{
+                  fontSize: "1em",
+                  fontWeight:"semibold",
+                  color: "#FBC412"
+                }}>
+                  FRIDAY
                 </Box>
     
               </VStack>
